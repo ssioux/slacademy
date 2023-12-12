@@ -4,3 +4,10 @@
   padding: 2rem;
   text-align: center;
 }
+
+
+.header {
+  padding: 40px;
+  border: 2px solid burlywood;
+  border-radius: 50%;
+}
