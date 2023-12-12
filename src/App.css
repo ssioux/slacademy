@@ -7,7 +7,9 @@
 
 
 .header {
-  padding: 40px;
-  border: 2px solid burlywood;
+  background-color: #ffffffa6;;
+  padding: 70px;
   border-radius: 50%;
+  box-shadow: rgb(181, 209, 54) 0px 2px 4px 0px,
+  rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
