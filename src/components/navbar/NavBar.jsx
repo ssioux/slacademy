@@ -11,7 +11,7 @@ function NavBar() {
   return (
     <>
     <section className='nav'>
-<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" fixed="top" bg="dark" data-bs-theme="dark" style={{backgroundColor: "red"}}>
+<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary wa" fixed="top" bg="dark" data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="#home"><img
               alt=""
