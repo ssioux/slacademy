@@ -1,15 +1,25 @@
-import "./App.css";
-import logo from "./assets/images/palmBigAlone.png"
-import NavBar from "./components/NavBar";
+import { Routes, Route } from "react-router-dom";
+
+// Components
+import Layout from "./pages/layout/Layout";
+import Error from "./pages/error/Error";
+import NotFound from "./pages/error/NotFound";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
     <>
-    <NavBar/>
-      <section className="header">
-        <img src={logo} alt="" />
-        <h1>SLAcademy</h1>
-      </section>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          {/* <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} /> */}
+
+          {/* Error Pages */}
+          <Route path="/error" element={<Error />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
     </>
   );
 }
